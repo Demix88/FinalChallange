@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to my website</h1>
+    <br>
+
+
+
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0">World Times</h5>
+        </div>
+        <div class="card-body">
+          
+                <div class="row no-gutters">
+                    <div class="form-group col-md-12">
+                        <p class=" align text-center"> Time in London is : @DateTime.Now</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <p class=" align text-center">Time in Berlin is : @DateTime.Now.AddHours(1)</p>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <p class=" align text-center">Time in Beijing  is : @DateTime.Now.AddHours(8)</p>
+                    </div>
+                    
+               
+            
+        </div>
+    </div>
+</div>
